@@ -1,0 +1,11 @@
+# To run:
+# kubectl create -f nginx.pod.yml --dry-run --validate=true
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-nginx-pod
+spec:
+  containers:
+  - name: my-nginx-container
+    image: nginx:alpine
